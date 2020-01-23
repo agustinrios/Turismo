@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+  <title>paisajes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="fontawesome/css/brands.min.css">
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome/css/solid.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+ <header class="header">
+    <div class="contenedor">
+        <h1 class="logo">Turismo</h1>
+        <span class="fa fa-bars" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+            <li class="menu__item"><a href="argentina.html" class="menu__link">Argentina</a></li>
+            <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+          </ul>
+        </nav>
+    </div>
+ </header>
+ <div class="banner">
+   <img src="imagenes/3.jpg" alt="">
+    <div class="contenedor">
+      <h2 class="banner__titulo">Regiones Lugares Turismo</h2>
+      <p class="banner__txt">Vista general de los mejores paisajes</p>
+    </div>
+ </div>
+ <main class="main">
+   <div class="contenedor">
+     <section class="info">
+       <article class="info__columna">
+         <img src="imagenes/main1.jpg" alt="" width="100%" height="200"  class="info__img">
+         <h2 class="info__titulo">Lago Nahuel Huapi</h2>
+         <p class="info__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut, incidunt aperiam dicta totam cumque.</p>
+       </article>
+       <article class="info__columna">
+         <img src="imagenes/main2.jpg" alt="" width="100%" height="200" class="info__img">
+         <h2 class="info__titulo">Cataratas</h2>
+         <p class="info__txt">Expedita totam, minima praesentium suscipit excepturi ducimus repellat harum ab, inventore neque cum! Nostrum,  dicta!</p>
+       </article>
+       <article class="info__columna">
+         <img src="imagenes/main3.jpg" alt="" width="100%" height="200"  class="info__img">
+         <h2 class="info__titulo">Aconcagua</h2>
+         <p class="info__txt">Molestiae odit quas officia, dicta, nobis dolorem, quaerat eveniet accusantium excepturi est quidem, ducimus  doloremque?</p>
+       </article>
+     </section>
+        <br>
+     <div class="slideshow-container">
+       <div class="mySlides fade">
+         <div class="numbertext">1 / 3</div>
+         <img src="imagenes/caption3.jpg" style="width:100%">
+         <div class="text">Cerro de los 7 Colores</div>
+       </div>
+       <div class="mySlides fade">
+         <div class="numbertext">2 / 3</div>
+         <img src="imagenes/camption1.jpg" style="width:100%">
+         <div class="text">El Palmar</div>
+       </div>
+       <div class="mySlides fade">
+         <div class="numbertext">3 / 3</div>
+         <img src="imagenes/caption2.jpg" style="width:100%">
+         <div class="text">Valle de la luna</div>
+       </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+        <br>
+
+     <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span> 
+       <span class="dot" onclick="currentSlide(2)"></span> 
+       <span class="dot" onclick="currentSlide(3)"></span> 
+     </div>
+
+     <section class="territorio">
+       <h2 class="section__titulo">Territorios</h2>
+       <div class="territorio__columna">
+         <img src="imagenes/regioncuyo.jpg" alt="" class="territorio__img">
+         <div class="territorio__descripcion">
+           <h2 class="territorio__titulo">Cuyo</h2>
+           <div class="territorio__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, dignissimos.</div>
+         </div>
+       </div>
+       <div class="territorio__columna">
+        <img src="imagenes/patagonia.jpg" alt="" class="territorio__img">
+        <div class="territorio__descripcion">
+          <h2 class="territorio__titulo">Patagonia</h2>
+          <div class="territorio__txt">Accusantium rem quia doloribus soluta ullam pariatur alias, quas dolorum.</div>
+        </div>
+       </div>
+       <div class="territorio__columna">
+         <img src="imagenes/noreste.jpg" alt="" class="territorio__img">
+         <div class="territorio__descripcion">
+           <h2 class="territorio__titulo">Noreste</h2>
+           <div class="territorio__txt">Voluptates aspernatur magnam possimus natus, et nemo maxime sed vitae!</div>
+         </div>
+       </div>
+       <div class="territorio__columna">
+         <img src="imagenes/noa.jpg" alt="" class="territorio__img">
+         <div class="territorio__descripcion">
+           <h2 class="territorio__titulo">Noroeste</h2>
+           <div class="territorio__txt">Nulla, cumque sunt laudantium blanditiis deserunt, error dolores vero iure.</div>
+         </div>
+       </div>
+       <div class="territorio__columna">
+         <img src="imagenes/lvp.costa.jpg" alt="" class="territorio__img">
+         <div class="territorio__descripcion">
+           <h2 class="territorio__titulo">Costa</h2>
+           <div class="territorio__txt">Nulla, cumque sunt laudantium blanditiis deserunt, error dolores.</div>
+         </div>
+       </div>
+     </section>       
+   </div>
+ </main>
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="social">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+      <p class="copy">&copy; Agustin Rios </p>
+   </div>
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+</html>

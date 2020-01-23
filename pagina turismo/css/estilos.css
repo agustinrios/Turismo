@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+.section__titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #86AEE9;
+}
+.contenedor {
+  margin: auto;
+  width: 99%;
+}
+/*------------------------------------------------------------------------------------------------------------------------*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #F82346;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------Estilos del header-------------------*/
+.header {
+  height: 60px;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.logo, span.fa {
+  margin: 5px;
+  color: #fff;
+}
+span.fa {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #86AEE9;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/*------------------Estilos del menu------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #86AEE9;
+  text-decoration: none;
+  color: #fff;
+}
+.menu__link:hover, .select {
+  background: white;
+  color: #86AEE9;
+}
+.mostrar {
+  left: 0;
+}
+
+/*--------------Estilos de banner--------------*/
+
+.banner {
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 20px;
+}
+
+.banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.banner__txt {
+  display: none;
+}
+
+/*-----------------Estilos de info-----------------*/
+.info__columna {
+  background: #86AEE9;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/*-----------------Estilos de cursos-----------------*/
+.territorio__columna {
+  position: relative;
+  margin-bottom: 30px;
+}
+.territorio__descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+.territorio__titulo {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.territorio__img {
+  width: 100%;
+}
+/*-----------------Estilos de footer-----------------*/
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .social [class^="fab"] {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
+
+/*------------------Estilos responsive------------------*/
+
+@media(min-width:480px) {
+  .logo {
+    font-size: 40px;
+  }
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .banner__txt {
+    display: block;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .info, .territorio{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+  }
+  .info__columna, .flip-card {
+    width: 32%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .section__titulo {
+    width: 100%;
+  }
+  .territorio {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .territorio__columna {
+    width: 49%;
+  }
+  .footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
+
+}
+@media(min-width:768px) {  
+  .banner__titulo {
+    font-size: 50px;
+  }
+  .territorio__titulo {
+    font-size: 40px;
+  }
+}
+
+@media(min-width:1024px) {  
+  .contenedor {
+    width: 1000px;
+  }
+  .section__titulo {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  span.fa {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #fff;
+    background: #86AEE9;
+  }
+  .banner__titulo {
+    font-size: 60px;
+  }
+  .banner__txt {
+    font-size: 25px;
+  }
+  .info {
+    margin-top: -120px;
+  }
+  .info__columna, {
+    padding: 30px;
+  }
+  .info__titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+  .territorio__descripcion {
+    padding: 20px;
+  }
+  .territorio__titulo {
+    font-size: 50px;
+  }
+  .territorio__txt {
+    font-size: 20px;
+  }
+
+}
+
+@media(min-width:1280px) {
+  .contenedor {
+    width: 1200px;
+  }
+  .logo {
+    font-size: 60px;
+  }
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
+}
+
